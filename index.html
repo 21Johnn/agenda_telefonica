@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenda de Contatos</title>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="./img/telephone.png" alt="capelo e diploma" class="logo" />
+        <h1>Contatos</h1>
+      </header>
+
+      <form action="" id="form-contato">
+        <input
+          type="text"
+          required
+          placeholder="Nome do Contato"
+          id="nome-contato"
+        />
+
+        
+        <input
+          type="number"
+          required
+          placeholder="DDD"
+          maxlength="2"
+          id="ddd"
+        />
+        <input
+          type="number"
+          required
+          placeholder="Telefone"
+          maxlength="11"
+          id="telefone"
+        />
+
+        <button type="submit">Adicionar +</button>
+      </form>
+
+      <main>
+        <table cellspacing="0">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>DDD</th>
+              <th>Telefone</th>
+            </tr>
+          </thead>
+          <tbody id="corpo"></tbody>
+        </table>
+      </main>
+    </div>
+
+    <!-- js -->
+    <script src="/main.js"></script>
+  </body>
+</html>
